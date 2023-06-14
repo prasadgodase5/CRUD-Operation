@@ -1,0 +1,17 @@
+.container{
+    margin-top: 100px;
+
+}
+.container2{
+    margin-top: 45px;
+    margin-left: 500px;    
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.form-group{
+    padding: 10px;
+}

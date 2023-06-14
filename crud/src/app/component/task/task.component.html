@@ -1,0 +1,64 @@
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card">
+                <form [formGroup]="loginform">
+                    <div class="form-group">
+                        <label>name</label>
+                        <input type="text" class="form-control" formControlName="name">
+                        <span *ngIf="name.touched && name.invalid" style="color:cadetblue;">Required</span>
+                    </div>
+                    <div class="form-group">
+                        <label>email</label>
+                        <input type="email" class="form-control" formControlName="email">
+                        <span *ngIf="email.touched && email.invalid" style="color: cadetblue;">Required</span> 
+                    </div>
+                    <div class="form-group">
+                        <label>seat no</label>
+                        <input type="number" class="form-control" formControlName="seat">
+                        <span *ngIf="seat.touched && seat.invalid" style="color: cadetblue;">Required</span> 
+                        
+                    </div>
+                    <div class="form-group">
+                        <label>State</label>
+                        <input type="text" class="form-control" formControlName="state">
+                        <span *ngIf="state.touched && state.invalid" style="color: cadetblue;">Required</span> 
+                    </div>
+                    <div class="btn">
+                        <button class="btn btn-success" [disabled]="loginform.invalid" (click)="postdata()">Submit</button>
+                        <button class="btn btn-primary" (click)="updatedata()">Update</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container2">
+    <div class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Sr.no</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Seat No</th>
+                    <th>State</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let items of i; let i=index">
+                    <td>{{i+1}}</td>
+                    <td>{{items.name}}</td>
+                    <td>{{items.email}}</td>
+                    <td>{{items.seat}}</td>
+                    <td>{{items.state}}</td>
+                    <td><button class="btn btn-primary" (click)="editdata(items,items.id)">edit</button></td>
+                    <td><button class="btn btn-danger" (click)="deletedata(items.id)">delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
