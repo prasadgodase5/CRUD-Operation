@@ -1,18 +1,11 @@
 {
   "posts": [
     {
-      "name": "prasad ",
-      "email": "pg7@gmail.com",
-      "seat": 93221,
-      "state": "karnataka",
-      "id": 1
-    },
-    {
-      "name": "prasad ",
-      "email": "pg7@gmail.com",
-      "seat": 93221,
+      "name": "prasad godase",
+      "email": "prasad12@gmail.com",
+      "seat": 2201,
       "state": "maharashtra",
-      "id": 3
+      "id": 1
     }
   ],
   "comments": [],

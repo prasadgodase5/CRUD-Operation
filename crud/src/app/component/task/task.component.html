@@ -5,23 +5,23 @@
             <div class="card">
                 <form [formGroup]="loginform">
                     <div class="form-group">
-                        <label>name</label>
+                        <label>Name</label>
                         <input type="text" class="form-control" formControlName="name">
                         <span *ngIf="name.touched && name.invalid" style="color:cadetblue;">Required</span>
                     </div>
                     <div class="form-group">
-                        <label>email</label>
+                        <label>Email</label>
                         <input type="email" class="form-control" formControlName="email">
                         <span *ngIf="email.touched && email.invalid" style="color: cadetblue;">Required</span> 
                     </div>
                     <div class="form-group">
-                        <label>seat no</label>
+                        <label>SEAT NO</label>
                         <input type="number" class="form-control" formControlName="seat">
                         <span *ngIf="seat.touched && seat.invalid" style="color: cadetblue;">Required</span> 
                         
                     </div>
                     <div class="form-group">
-                        <label>State</label>
+                        <label>STATE</label>
                         <input type="text" class="form-control" formControlName="state">
                         <span *ngIf="state.touched && state.invalid" style="color: cadetblue;">Required</span> 
                     </div>
